@@ -1,6 +1,6 @@
 /* Master Styles */
 body {
-    font-family: "Lobster", sans-serif;
+    font-family: "Russo One", sans-serif;
     margin: 0px;
 }
 
@@ -24,6 +24,7 @@ nav {
     background-color: rgb(21, 124, 150);
     font-family: "Russo One", sans-serif;
 }
+
 
 .logo {
     color: whitesmoke;
@@ -107,12 +108,10 @@ nav {
 
 /* Portfolio Styles */
 
-.portfolio-item-wrapper {
-    position: relative;
-}
 
 .portfolio-img-background {
     /* Can't make height 100%? */
+    position: relative;
     height: 800px;
     width: 100%;
     background-size: cover;
@@ -121,6 +120,12 @@ nav {
 }
 
 .img-text-wrapper {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /*
     position: absolute;
     top: 0;
     display: flex;
@@ -129,16 +134,18 @@ nav {
     align-items: center;
     height: 100%;
     text-align: center;
-    /* How do I center this lol */
+    /* How do I center this lol 
     margin-left: 35%;
+    */
     
 }
 
 .logos-wrapper {
     display: flex;
     height: 128px;
+    width: 200px;
     justify-content: space-around;
-    width: 25%;
+    margin: auto;
 }
 
 .logo-wrapper img {
@@ -147,7 +154,7 @@ nav {
     justify-content: center;
     align-items: center;
     height: 50px;
-    padding-top: 60px;
+    padding-top: 50%;
 }
 
 .subtitle1 {
@@ -168,20 +175,24 @@ nav {
 }
 
 #about {
-    background-color: lightblue;
+    background-color: whitesmoke;
+}
+
+.about-me-title {
+    display: flex;
+    justify-content: center;
+    margin-top: 70px;
+    margin-bottom: 0px;
+    font-size: 35px;
+    word-spacing: .2em;
 }
 
 .about-me-wrapper {
-    display: flex;
-    height: 100%;
-    justify-content: space-around;
+    
 }
 
 .picture-of-me-wrapper {
-    display: flex;
-    justify-content: left;
-    align-items: center;
-    padding-bottom: 50px;
+   
 }
 .picture-of-me-wrapper img{
     height: 25em;
@@ -190,10 +201,27 @@ nav {
 }
 
 .subtitle3 {
+    
+}
+
+.tech-ive-used {
+    font-size: 45px;
+    color: black;
+    text-align: center;
+    padding-top: 150px;
+    padding-bottom: 60px;
+}
+
+#skills-list {
+    text-align: center;
+}
+
+.program-logos {
     display: flex;
-    width: 50%;
-    justify-content: center;
-    align-items: center;
+    height: 128px;
+    width: 200px;
+    justify-content: space-around;
+    margin: auto;
 }
 
 #experience {
